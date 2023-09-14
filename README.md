@@ -5,23 +5,29 @@ The game is played between two players on a rectangular field of at least 5x5 di
 
 ## How to play: 
 Execute the following commands in the bash shell:
-''' console
 
+```bash
 make F4Server
-
-'''
+```
 After this, open two more terminal windows, in the first one start the server.
-''' console
-
+```bash
 ./F4Server X 0 5 5 
-
-'''
+```
 Where X and O are the tokens assigned to the players, and the two following numbers indicate the field's dimensions. The field size has no limits, but it is recommended to play in a maximum of 10x10.
+
+### Multiplayer:
 Now, in the other terminal, start the first client with the nickname of your choice using the command:
-''' console
-
-./F4Client David 
-
-'''
+```bash
+./F4Client David
+```
 Now, this player will remain waiting for another player to join. Perform the same operation in the other terminal using the same command.
+
+### Singleplayer:
+Start the only client using the command:
+
+```bash
+./F4Client David '*'
+```
+This way, you can play against a non-intelligent bot that will make random moves.
+
 The game is ready! Have fun!
