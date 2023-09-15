@@ -7,7 +7,7 @@ The game is played between two players on a rectangular field of at least 5x5 di
 Execute the following commands in the bash shell:
 
 ```bash
-make F4Server
+make 
 ```
 After this, open two more terminal windows, in the first one start the server.
 ```bash
